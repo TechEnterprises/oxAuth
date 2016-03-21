@@ -80,13 +80,6 @@
             <artifactId>oxauth-model</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.xdi</groupId>
-            <artifactId>oxauth-model</artifactId>
-            <version>${project.version}</version>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-jaxrs</artifactId>
         </dependency>
