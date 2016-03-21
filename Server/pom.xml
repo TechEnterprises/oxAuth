@@ -362,13 +362,6 @@
         </dependency>
         <dependency>
             <groupId>org.xdi</groupId>
-            <artifactId>oxauth-client</artifactId>
-            <version>${project.version}</version>
-            <type>test-jar</type>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.xdi</groupId>
             <artifactId>oxLdap</artifactId>
         </dependency>
         <dependency>
@@ -906,7 +899,7 @@
 		<id>oxAuth test dependencies</id>
 		<activation>
 			<file>
-				<exists>../Client/target/oxauth-client-tests.jar</exists>
+				<exists>../Model/target/oxauth-model-tests.jar</exists>
 			</file>
 		</activation>
 		<dependencies>
@@ -917,7 +910,15 @@
 				<type>test-jar</type>
 				<scope>test</scope>
 			</dependency>
+        <dependency>
+            <groupId>org.xdi</groupId>
+            <artifactId>oxauth-client</artifactId>
+            <version>${project.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
 		</dependencies>
+
 	</profile>
     </profiles>
 
