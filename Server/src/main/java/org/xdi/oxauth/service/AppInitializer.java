@@ -324,8 +324,8 @@ public class AppInitializer {
     private Properties prepareBindConnectionProperties(Properties connectionProperties) {
 		// TODO: Use own properties with prefix specified in variable 'bindConfigurationComponentName'
 		Properties bindProperties = (Properties) connectionProperties.clone();
-		bindProperties.remove("bindDN");
-		bindProperties.remove("bindPassword");
+//		bindProperties.remove("bindDN");
+//		bindProperties.remove("bindPassword");
 
 		return bindProperties;
 	}
