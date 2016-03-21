@@ -903,12 +903,14 @@
         </profile>
     </profiles>
 
+
+    <profiles>
 	<profile>
 		<id>oxAuth test dependencies</id>
 		<activation>
-			<property>
-				<name>!maven.test.skip</name>
-			</property>
+			<file>
+				<exists>../Client/target/oxauth-client-tests.jar</exists>
+			</file>
 		</activation>
 		<dependencies>
 			<dependency>
@@ -920,5 +922,6 @@
 			</dependency>
 		</dependencies>
 	</profile>
+    </profiles>
 
 </project>
