@@ -901,10 +901,7 @@
                 </dependency>
             </dependencies>
         </profile>
-    </profiles>
 
-
-    <profiles>
 	<profile>
 		<id>oxAuth test dependencies</id>
 		<activation>
